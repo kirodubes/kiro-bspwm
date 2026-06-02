@@ -1,0 +1,131 @@
+###############################################################################
+#  KEYBINDINGS — bspwm
+#  Source: etc/skel/.config/bspwm/sxhkd/sxhkdrc
+#  Generated: 2026.06.01 by /kiro-keybindings-all-twms — DO NOT EDIT BY HAND
+###############################################################################
+
+── 1. Applications & Launchers ───────────────────────────────────────────────
+  super + Return            alacritty (terminal)
+  super + KP_Enter          alacritty (terminal)
+  ctrl + alt + Return       alacritty (terminal)
+  ctrl + alt + t            alacritty (terminal)
+  super + t                 urxvt (terminal)
+  F12                       xfce4-terminal (drop-down)
+  super + h                 urxvt -e htop (task manager)
+  super + shift + Return    thunar (file manager)
+  super + F8                thunar (file manager)
+  ctrl + alt + b            thunar (file manager)
+  ctrl + alt + c            catfish (file search)
+  super + d                 rofi launcher (launcher.sh)
+  super + F11               rofi drun (fullscreen)
+  super + F12               rofi drun
+  super + shift + d         dmenu_run
+  ctrl + alt + a            xfce4-appfinder
+  alt + F2                  xfce4-appfinder (collapsed)
+  alt + F3                  xfce4-appfinder
+  super + ctrl + s          kiro-keybindings (this cheatsheet)
+  super + F1                vivaldi (browser)
+  super + w                 vivaldi (browser)
+  ctrl + alt + v            vivaldi (browser)
+  ctrl + alt + f            firefox
+  ctrl + alt + g            chromium
+  ctrl + alt + d            obs
+  super + e                 code (editor)
+  super + F2                code (editor)
+  super + F3                inkscape
+  super + F4                gimp
+  super + F5                meld
+  super + F6                vlc
+  super + F7                virtualbox
+  super + F9                lollypop (audio player)
+  super + m                 lollypop (audio player)
+  super + F10               spotify
+  ctrl + alt + s            spotify
+  super + v                 pavucontrol (audio mixer)
+  ctrl + alt + u            pavucontrol (audio mixer)
+  ctrl + alt + p            pamac-manager (package manager)
+  ctrl + alt + e            archlinux-tweak-tool
+  ctrl + alt + m            xfce4-settings-manager
+  super + r                 rofi-theme-selector
+  ctrl + alt + r            rofi-theme-selector
+  ctrl + alt + i            nitrogen (wallpaper)
+  alt + n                   variety: next wallpaper
+  alt + p                   variety: previous wallpaper
+  alt + t                   variety: trash wallpaper
+  alt + f                   variety: favorite wallpaper
+  alt + Right               variety: next wallpaper
+  alt + Left                variety: previous wallpaper
+  alt + Up                  variety: pause cycling
+  alt + Down                variety: resume cycling
+  alt + shift + n           variety next + pywal recolor
+  alt + shift + p           variety previous + pywal recolor
+  alt + shift + t           variety trash + pywal recolor
+  alt + shift + f           variety favorite + pywal recolor
+  alt + shift + u           pywal: recolor from current wallpaper
+
+── 2. Window Management ───────────────────────────────────────────────────────
+  super + q                 close focused window
+  super + shift + q         close focused window
+  super + Escape            xkill (click to kill window)
+  super + f                 toggle fullscreen
+  super + p                 toggle pseudo-tiled
+  super + space             cycle state: tiled / pseudo / floating / fullscreen
+  super + ctrl + space      cancel preselection
+  super + h / j / k / l     focus window  west / south / north / east
+  super + shift + h/j/k/l   swap window   west / south / north / east
+  super + ctrl + Left/Down/Up/Right    focus window by direction
+  ctrl + alt + Left/Right/Up/Down      focus window by direction
+  super + alt + {Left,Down,Up,Right}            move floating window
+  super + alt + shift + {Left,Down,Up,Right}    move floating window to edge
+
+── 3. Workspaces / Tags / Groups ─────────────────────────────────────────────
+  super + 1..0              switch to desktop 1..0
+  super + shift + 1..0      send window to desktop 1..0
+  super + Tab               focus selected desktop
+  alt + Tab                 focus selected desktop
+  alt + shift + Tab         focus selected desktop
+
+── 4. Layout & Tiling ─────────────────────────────────────────────────────────
+  super + a                 flip layout vertically
+  super + shift + a         flip layout horizontally
+  alt + space               rotate tree 90 / -90
+  super + bracketleft       decrease window gap
+  super + bracketright      increase window gap
+  super + button4 / 5       window gap - / + (scroll)
+  super + ctrl + h/j/k/l    contract / resize tiled window
+  alt + shift + h/j/k/l     expand / resize tiled window
+  super + ctrl + e/r/t/y    focus parent / brother / first / second node
+  super + ctrl + u/i/o/p    preselect split  west / south / north / east
+  super + ctrl + 1..9       preselect split ratio 0.1..0.9
+  super + ctrl + shift + 1..9   preselect split ratio on parent
+
+── 5. Multi-monitor ───────────────────────────────────────────────────────────
+  super + BackSpace         focus next monitor
+  super + shift + Left/Right/Up/Down    move window to next monitor & follow
+
+── 6. Multimedia & Hardware ───────────────────────────────────────────────────
+  XF86AudioRaiseVolume      volume +10%
+  XF86AudioLowerVolume      volume -10%
+  XF86AudioMute             toggle mute
+  XF86AudioPlay             playerctl play-pause
+  XF86AudioNext             playerctl next
+  XF86AudioPrev             playerctl previous
+  XF86AudioStop             playerctl stop
+  XF86MonBrightnessUp       brightness +10
+  XF86MonBrightnessDown     brightness -10
+
+── 7. Screenshots ─────────────────────────────────────────────────────────────
+  Print                     scrot (full screen to Pictures)
+  ctrl + Print              xfce4-screenshooter
+  ctrl + shift + Print      gnome-screenshot (interactive)
+
+── 8. System & Session ────────────────────────────────────────────────────────
+  super + x                 archlinux-logout
+  ctrl + alt + k            archlinux-logout
+  ctrl + alt + l            archlinux-logout
+  super + shift + x         arcolinux-powermenu
+  super + shift + r         reload bspwm (bspwmrc)
+  super + shift + s         reload sxhkd
+  super + g                 toggle compositor (fastcompmgr)
+  super + y                 toggle polybar
+  ctrl + shift + Escape     xfce4-taskmanager

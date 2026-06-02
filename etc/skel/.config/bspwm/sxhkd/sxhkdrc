@@ -58,6 +58,10 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
+#show keybindings
+super + ctrl + s
+    kiro-keybindings
+
 #Code
 super + e
     code
@@ -141,13 +145,13 @@ super + shift + s
 # CONTROL + ALT KEYS
 #################################################################
 
-#arcolinux-welcome-app
-ctrl + alt + w
-     arcolinux-welcome-app
-
 #archlinux-tweak-tool
 ctrl + alt + e
     archlinux-tweak-tool
+
+#obs
+ctrl + alt + d
+    obs
 
 #File-Manager
 ctrl + alt + b

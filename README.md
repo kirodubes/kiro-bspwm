@@ -2,14 +2,18 @@
   <img src="kiro.jpg" alt="Kiro" width="220" />
 </p>
 
-# edu-bspwm
+# kiro-bspwm
 
-Educational / tutorial repository for [bspwm](https://github.com/baskerville/bspwm), a tiling window manager that represents windows as the leaves of a binary tree. Part of the `~/EDU/` learning series — a working bspwm config dropped on top of a fresh Arch / Kiro install.
+Educational / tutorial repository for [bspwm](https://github.com/baskerville/bspwm), a tiling window manager that represents windows as the leaves of a binary tree. Part of the learning series — a working bspwm config dropped on top of a fresh Arch / Kiro install.
 
 ## What's in this repo
 
 - `etc/skel/` — user-facing configs (bspwm + sxhkd keybindings) that land in `/etc/skel/` and propagate to new users.
-- `setup.sh`, `up.sh`, `cleanup.sh` — standard EDU bash scaffold.
+- `setup.sh`, `up.sh`, `cleanup.sh`
+
+## Keybindings
+
+Press **`Super + Ctrl + S`** to open the searchable **kiro-keybindings** cheatsheet — an on-screen, type-to-filter list of every shortcut, identical across all Kiro desktops. The full list also ships as a plain-text [`keybindings.txt`](etc/skel/.config/bspwm/keybindings.txt) in the config directory.
 
 ## Installation
 
@@ -18,12 +22,12 @@ Educational / tutorial repository for [bspwm](https://github.com/baskerville/bsp
 ```ini
 [nemesis_repo]
 SigLevel = Never
-Server = https://erikdubois.github.io/$repo/$arch
+Server = https://kirodubes.github.io/$repo/$arch
 ```
 
 ```bash
 sudo pacman -Syu
-sudo pacman -S edu-bspwm
+sudo pacman -S kiro-bspwm
 ```
 
 You'll also need bspwm + sxhkd:
@@ -35,8 +39,8 @@ sudo pacman -S bspwm sxhkd
 ### Manual
 
 ```bash
-git clone https://github.com/erikdubois/edu-bspwm.git
-cd edu-bspwm
+git clone https://github.com/kirodubes/kiro-bspwm.git
+cd kiro-bspwm
 sudo cp -r etc/skel/. /etc/skel/
 ```
 
