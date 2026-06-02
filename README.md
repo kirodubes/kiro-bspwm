@@ -22,7 +22,7 @@ Press **`Super + Ctrl + S`** to open the searchable **kiro-keybindings** cheatsh
 ```ini
 [nemesis_repo]
 SigLevel = Never
-Server = https://kirodubes.github.io/$repo/$arch
+Server = https://erikdubois.github.io/$repo/$arch
 ```
 
 ```bash

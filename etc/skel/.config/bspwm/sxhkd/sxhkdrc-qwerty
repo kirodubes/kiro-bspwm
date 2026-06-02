@@ -58,6 +58,10 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
+#show keybindings
+super + ctrl + s
+    kiro-keybindings
+
 #Code
 super + e
     code

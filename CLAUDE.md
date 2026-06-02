@@ -1,4 +1,4 @@
-# CLAUDE.md — edu-bspwm
+# CLAUDE.md — kiro-bspwm
 
 ## Project overview
 
