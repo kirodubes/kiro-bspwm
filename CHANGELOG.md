@@ -1,5 +1,26 @@
 # Changelog
 
+## 2026.06.02
+
+### What Changed
+- Rewrote `autostart.sh` to the canonical [TWM autostart standard](/home/erik/Insync/Kiro/Kiro-HQ/AUTOSTART_TEMPLATE.md): documented header, `# ──` sections in standard order, canonical `run()` (it was commented out and never used — every launch was a bare `app &`).
+- **Keyboard layout now auto-detects.** QWERTY is the default for the world; a Belgian (`be`) layout — chosen at install — auto-loads the AZERTY sxhkd variant. Previously the script hardcoded `sxhkdrc-azerty`, which broke desktop-switching (super+1..9) for every QWERTY user. No manual file editing needed anymore. Mirrors leftwm's existing `be`-detection.
+- Removed the rubbish: dead `#xrandr`/`#autorandr` wall, the broken cross-distro `wallpaper.png` line (that file doesn't exist — it's `wallpaper.jpg`), the `~/Dropbox/...` randomize line, and the trailing commented `#run firefox/discord/spotify/...` pile.
+- Adopted the standard `.fehbg`-restore wallpaper pattern (fallback to the Kiro wallpaper), and moved the polybar launch into its own Status bar section.
+- Removed the now-redundant manual switch scripts `.bin/give-me-azerty-be-bspwm` and `.bin/give-me-qwerty-us-bspwm` — the autostart auto-detects the layout.
+
+### Technical Details
+- Layout detection: `setxkbmap -query | awk '/^layout:/{print $2}'` → `case ",$layout," in *,be,*) azerty ;; *) qwerty` → `run sxhkd -c …/<variant>`. The azerty/qwerty files differ only in the workspace number-row bindings.
+- Converted all bare `app &` launches to the `pgrep`-guarded `run()` so a bspwm restart (super+alt+r re-runs autostart) doesn't duplicate tray applets.
+- Preserved bspwm's per-WM facts: **polybar** status bar (from the kiro-polybar package), `xsetroot` cursor, fastcompmgr default, and **no WM-loop tail** (bspwmrc calls this script).
+- `volumeicon` left commented out as it shipped (no volume applet) — flagged for a decision, not changed.
+- Validated with `bash -n`; dry-ran the detection (be → azerty, else qwerty).
+
+### Files Modified
+- etc/skel/.config/bspwm/autostart.sh
+- etc/skel/.bin/give-me-azerty-be-bspwm (removed)
+- etc/skel/.bin/give-me-qwerty-us-bspwm (removed)
+
 ## 2026.06.01
 
 ### What Changed
