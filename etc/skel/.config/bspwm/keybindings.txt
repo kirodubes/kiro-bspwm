@@ -48,7 +48,6 @@
   ctrl + alt + m            xfce4-settings-manager
   super + r                 rofi-theme-selector
   ctrl + alt + r            rofi-theme-selector
-  ctrl + alt + i            nitrogen (wallpaper)
   alt + n                   variety: next wallpaper
   alt + p                   variety: previous wallpaper
   alt + t                   variety: trash wallpaper
