@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.06.08
+
+### What Changed
+- Rebound `Super + F9` from `lollypop` to `virt-manager`, matching the distro-wide change applied across all Kiro environments.
+
+### Technical Details
+- Edited the `Super + F9` entry in all three sxhkd files (`sxhkd/sxhkdrc` plus the `sxhkdrc-azerty` / `sxhkdrc-qwerty` layout variants, so the binding survives a keyboard-layout swap) and regenerated the cheatsheet (`keybindings.txt` → `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py`).
+
+### Files Modified
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc`
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc-azerty`
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc-qwerty`
+- `etc/skel/.config/bspwm/keybindings.txt`
+- `etc/skel/.config/bspwm/keybindings.html`
+- `etc/skel/.config/bspwm/keybindings.pdf`
+
 ## 2026.06.02
 
 ### What Changed
