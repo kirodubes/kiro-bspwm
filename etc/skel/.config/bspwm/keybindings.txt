@@ -29,6 +29,7 @@
   ctrl + alt + v            vivaldi (browser)
   ctrl + alt + f            firefox
   ctrl + alt + g            chromium
+  ctrl + alt + i            kiro-iso-builder
   ctrl + alt + d            obs
   super + e                 code (editor)
   super + F2                code (editor)
