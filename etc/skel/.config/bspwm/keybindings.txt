@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — bspwm
 #  Source: etc/skel/.config/bspwm/sxhkd/sxhkdrc
-#  Generated: 2026.06.08 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
+#  Generated: 2026.06.14 by /kiro-create-keybindings — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -9,9 +9,7 @@
   super + KP_Enter          alacritty (terminal)
   ctrl + alt + Return       alacritty (terminal)
   ctrl + alt + t            alacritty (terminal)
-  super + t                 urxvt (terminal)
   F12                       xfce4-terminal (drop-down)
-  super + h                 urxvt -e htop (task manager)
   super + shift + Return    thunar (file manager)
   super + F8                thunar (file manager)
   ctrl + alt + b            thunar (file manager)
@@ -39,7 +37,6 @@
   super + F6                vlc
   super + F7                virtualbox
   super + F9                virt-manager (virtual machine manager)
-  super + m                 lollypop (audio player)
   super + F10               spotify
   ctrl + alt + s            spotify
   super + v                 pavucontrol (audio mixer)

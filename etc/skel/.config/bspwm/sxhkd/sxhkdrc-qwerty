@@ -70,10 +70,6 @@ super + e
 super + w
     vivaldi-stable
 
-#Htop
-super + h
-    urxvt 'htop task manager' -e htop
-
 #archlinux-logout
 super + x
     archlinux-logout
@@ -86,17 +82,9 @@ super + shift + x
 super + r
     rofi-theme-selector
 
-#Urxvt
-super + t
-    urxvt
-
 #Pavucontrol
 super + v
     pavucontrol
-
-#Audio player
-super + m
-    lollypop
 
 #alacritty
 super + Return
@@ -148,6 +136,10 @@ super + shift + s
 #archlinux-tweak-tool
 ctrl + alt + e
     archlinux-tweak-tool
+
+#obs
+ctrl + alt + d
+    obs
 
 #File-Manager
 ctrl + alt + b
