@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026.06.14
+
+### What Changed
+- Removed three keybindings: `Super + h` (urxvt htop), `Super + t` (urxvt), and `Super + m` (lollypop). Regenerated the cheatsheet to match.
+
+### Technical Details
+- Deleted the three binding blocks from all sxhkd files (`sxhkd/sxhkdrc` plus the `sxhkdrc-azerty` / `sxhkdrc-qwerty` layout variants) so the change survives a keyboard-layout swap, then regenerated `keybindings.txt` → `keybindings.html` + `keybindings.pdf` via `kiro-keybindings-html.py` (107 bindings, 8 sections).
+
+### Files Modified
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc`
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc-azerty`
+- `etc/skel/.config/bspwm/sxhkd/sxhkdrc-qwerty`
+- `etc/skel/.config/bspwm/keybindings.txt`
+- `etc/skel/.config/bspwm/keybindings.html`
+- `etc/skel/.config/bspwm/keybindings.pdf`
+
 ## 2026.06.08
 
 ### What Changed
