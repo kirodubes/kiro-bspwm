@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — bspwm
 #  Source: etc/skel/.config/bspwm/sxhkd/sxhkdrc
-#  Generated: 2026.06.29 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
+#  Generated: 2026.06.30 by /kiro-keybindings-all — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
