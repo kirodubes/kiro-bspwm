@@ -46,15 +46,10 @@ run fastcompmgr -c
 
 # ── Keyboard ──────────────────────────────────────────────────────────────────
 run numlockx on                                      # Enable numlock on login
-# sxhkd handles keybindings. QWERTY is the default; a Belgian (be) keyboard
-# layout — chosen at install — auto-loads the AZERTY variant. The two files
-# differ only in the workspace number-row bindings. No manual editing needed.
-layout=$(setxkbmap -query | awk '/^layout:/ {print $2}')
-case ",$layout," in
-  *,be,*) sxhkd_cfg=sxhkdrc-azerty ;;
-  *)      sxhkd_cfg=sxhkdrc-qwerty ;;
-esac
-run sxhkd -c ~/.config/bspwm/sxhkd/"$sxhkd_cfg"
+# sxhkd handles keybindings. One config serves both QWERTY and Belgian AZERTY:
+# the workspace number-row bindings are defined for both layouts at once, and
+# they never collide (different keysyms). No layout detection or switching.
+run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc
 
 # ── Volume control ────────────────────────────────────────────────────────────
 #run volumeicon                                       # PipeWire/PulseAudio volume tray (disabled)

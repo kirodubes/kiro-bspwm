@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — bspwm
 #  Source: etc/skel/.config/bspwm/sxhkd/sxhkdrc
-#  Generated: 2026.06.14 by /kiro-create-keybindings — DO NOT EDIT BY HAND
+#  Generated: 2026.06.29 by /kiro-keybindings-all-twms-xfce — DO NOT EDIT BY HAND
 ###############################################################################
 
 ── 1. Applications & Launchers ───────────────────────────────────────────────
@@ -9,16 +9,22 @@
   super + KP_Enter          alacritty (terminal)
   ctrl + alt + Return       alacritty (terminal)
   ctrl + alt + t            alacritty (terminal)
-  F12                       xfce4-terminal (drop-down)
+  super + t                 alacritty (terminal)
+  ctrl + alt + End          alacritty -e btop
+  F12                       alacritty (drop-down)
   super + shift + Return    thunar (file manager)
+  super + shift + KP_Enter  thunar (file manager)
   super + F8                thunar (file manager)
-  ctrl + alt + b            thunar (file manager)
-  ctrl + alt + c            catfish (file search)
+  ctrl + alt + b            brave
+  ctrl + alt + c            chromium
   super + d                 rofi launcher (launcher.sh)
   super + F11               rofi drun (fullscreen)
   super + F12               rofi drun
   super + shift + d         dmenu_run
-  ctrl + alt + a            xfce4-appfinder
+  ctrl + alt + a            alacritty-tweak-tool
+  ctrl + alt + q            alacritty-tweak-tool
+  ctrl + alt + z            fastfetch-tweak-tool
+  ctrl + alt + w            fastfetch-tweak-tool
   alt + F2                  xfce4-appfinder (collapsed)
   alt + F3                  xfce4-appfinder
   super + ctrl + s          kiro-keybindings (this cheatsheet)
@@ -27,6 +33,7 @@
   ctrl + alt + v            vivaldi (browser)
   ctrl + alt + f            firefox
   ctrl + alt + g            chromium
+  ctrl + alt + o            opera
   ctrl + alt + i            kiro-iso-builder
   ctrl + alt + d            obs
   super + e                 code (editor)
@@ -38,14 +45,16 @@
   super + F7                virtualbox
   super + F9                virt-manager (virtual machine manager)
   super + F10               spotify
-  ctrl + alt + s            spotify
+  ctrl + alt + s            fish-tweak-tool
   super + v                 pavucontrol (audio mixer)
   ctrl + alt + u            pavucontrol (audio mixer)
   ctrl + alt + p            pamac-manager (package manager)
   ctrl + alt + e            archlinux-tweak-tool
-  ctrl + alt + m            xfce4-settings-manager
+  ctrl + alt + m            mintstick -m iso
+  ctrl + alt + ,            mintstick -m iso
   super + r                 rofi-theme-selector
-  ctrl + alt + r            rofi-theme-selector
+  alt + r                   rofi-theme-selector
+  super + ctrl + space      variety --selector
   alt + n                   variety: next wallpaper
   alt + p                   variety: previous wallpaper
   alt + t                   variety: trash wallpaper
@@ -64,10 +73,10 @@
   super + q                 close focused window
   super + shift + q         close focused window
   super + Escape            xkill (click to kill window)
+  super + shift + Escape    xkill (click to kill window)
   super + f                 toggle fullscreen
   super + p                 toggle pseudo-tiled
   super + space             cycle state: tiled / pseudo / floating / fullscreen
-  super + ctrl + space      cancel preselection
   super + h / j / k / l     focus window  west / south / north / east
   super + shift + h/j/k/l   swap window   west / south / north / east
   super + ctrl + Left/Down/Up/Right    focus window by direction
@@ -76,8 +85,8 @@
   super + alt + shift + {Left,Down,Up,Right}    move floating window to edge
 
 ── 3. Workspaces / Tags / Groups ─────────────────────────────────────────────
-  super + 1..0              switch to desktop 1..0
-  super + shift + 1..0      send window to desktop 1..0
+  super + 1..0              switch to desktop 1..0      (AZERTY: same physical keys, unshifted)
+  super + shift + 1..0      send window to desktop 1..0  (AZERTY: same physical keys, unshifted)
   super + Tab               focus selected desktop
   alt + Tab                 focus selected desktop
   alt + shift + Tab         focus selected desktop
@@ -115,12 +124,14 @@
   Print                     scrot (full screen to Pictures)
   ctrl + Print              xfce4-screenshooter
   ctrl + shift + Print      gnome-screenshot (interactive)
+  super + ctrl + Print      flameshot gui
 
 ── 8. System & Session ────────────────────────────────────────────────────────
   super + x                 archlinux-logout
   ctrl + alt + k            archlinux-logout
   ctrl + alt + l            archlinux-logout
-  super + shift + x         arcolinux-powermenu
+  ctrl + alt + r            archlinux-betterlockscreen (lock screen)
+  super + shift + x         edu-powermenu
   super + shift + r         reload bspwm (bspwmrc)
   super + shift + s         reload sxhkd
   super + g                 toggle compositor (fastcompmgr)

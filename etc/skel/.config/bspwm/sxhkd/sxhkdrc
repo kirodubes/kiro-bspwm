@@ -422,13 +422,6 @@ super + ctrl + Print
 ctrl + alt + o
 	opera
 
-#update-system
-ctrl + alt + shift + F1
-	update-system
-
-#update-system
-super + ctrl + shift + F1
-	update-system
 #################################################################
 #################################################################
 ##################   DESKTOP SPECIFIC    ########################
@@ -611,29 +604,31 @@ ctrl + alt + Down
 #################################################################
 #################################################################
 
-#Switch here between qwerty and azerty or make new one
+# Both layouts are bound at once: the QWERTY digits and the Belgian-AZERTY
+# unshifted symbols are different keysyms, so they never collide (on QWERTY the
+# symbols need Shift, on AZERTY the digits need Shift). No layout switching needed.
 #Focus selected desktop FOR QWERTY KEYBOARDS
 super + {1-9,0}
 	bspc desktop -f '^{1-9,10}'
 
 #Focus selected desktop	FOR BELGIAN AZERTY KEYBOARDS
-#super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    bspc desktop -f '^{1-9,10}'
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+    bspc desktop -f '^{1-9,10}'
 
-#Focus selected desktop	FOR FRENCH AZERTY KEYBOARDS
+#Focus selected desktop	FOR FRENCH AZERTY KEYBOARDS (uncomment to add; super+minus/underscore then also switch desktops on QWERTY)
 #super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
 #    bspc desktop -f '^{1-9,10}'
 
 #################################################################
 
-#Switch here between qwerty and azerty or make new one
+# Both layouts bound at once — same rationale as the focus block above.
 #Move window to selected desktop FOR QWERTY KEYBOARDS
 super + shift + {1-9,0}
     id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
-#Move window to selected desktop FOR AZERTY KEYBOARDS
-#super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
-#    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+#Move window to selected desktop FOR BELGIAN AZERTY KEYBOARDS
+super + shift + {ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
 
 #################################################################
 
