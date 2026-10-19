@@ -1,7 +1,7 @@
 ###############################################################################
 #  KEYBINDINGS — bspwm
 #  Source: etc/skel/.config/bspwm/sxhkd/sxhkdrc
-#  Generated: 2026.06.30
+#  Generated: 2026.10.19
 #  Reference for the default bindings. Changed yours? Edit this file to match.
 ###############################################################################
 
@@ -69,6 +69,12 @@
   alt + shift + t           variety trash + pywal recolor
   alt + shift + f           variety favorite + pywal recolor
   alt + shift + u           pywal: recolor from current wallpaper
+  super + ctrl + a          pavucontrol
+  super + ctrl + shift + a  alacritty -e claude (AI agent)
+  super + shift + f         thunar (file manager)
+  super + shift + b         vivaldi-stable (browser)
+  super + shift + n         code (editor)
+  super + shift + m         spotify
 
 ── 2. Window Management ───────────────────────────────────────────────────────
   super + q                 close focused window
@@ -120,6 +126,9 @@
   XF86AudioStop             playerctl stop
   XF86MonBrightnessUp       brightness +10
   XF86MonBrightnessDown     brightness -10
+  XF86AudioMicMute          toggle microphone mute
+  alt + XF86AudioRaiseVolume  raise volume by 1%
+  alt + XF86AudioLowerVolume  lower volume by 1%
 
 ── 7. Screenshots ─────────────────────────────────────────────────────────────
   Print                     scrot (full screen to Pictures)
