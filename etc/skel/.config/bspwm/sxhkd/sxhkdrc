@@ -76,7 +76,7 @@ super + x
 
 #powermenu
 super + shift + x
-    edu-powermenu
+    kiro-powermenu
 
 #Rofi theme selector
 super + r

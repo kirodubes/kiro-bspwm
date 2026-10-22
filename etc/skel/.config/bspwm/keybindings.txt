@@ -141,7 +141,7 @@
   ctrl + alt + k            archlinux-logout
   ctrl + alt + l            archlinux-logout
   ctrl + alt + r            archlinux-betterlockscreen (lock screen)
-  super + shift + x         edu-powermenu
+  super + shift + x         kiro-powermenu
   super + shift + r         reload bspwm (bspwmrc)
   super + shift + s         reload sxhkd
   super + g                 toggle compositor (fastcompmgr)
