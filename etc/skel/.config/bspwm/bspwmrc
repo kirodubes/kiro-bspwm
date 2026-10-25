@@ -36,8 +36,23 @@ bspc config presel_feedback_color	"#5e81ac"
 #bspc config urgent_border_color 	"#dd2727"
 
 
-#Single monitor
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+#Desktops: 1-10 on a single monitor. With two or more monitors the leftmost
+#gets 1-5 and the next one 6-10, so every screen has desktops of its own
+#(a bare "bspc monitor -d" only fills the focused monitor and leaves the other
+#with one unusable "Desktop"). Monitors are ordered left to right first: the
+#super+number keys use the desktop index (^1..^10), which follows that order.
+monitors=$(for m in $(bspc query -M --names); do
+    x=$(bspc query -T -m "$m" | grep -o '"rectangle":{"x":-\{0,1\}[0-9]*' | head -n1 | grep -o -- '-\{0,1\}[0-9]*$')
+    echo "$x $m"
+done | sort -n | awk '{print $2}')
+set -- $monitors
+if [ $# -ge 2 ]; then
+    bspc wm -O $monitors
+    bspc monitor "$1" -d 1 2 3 4 5
+    bspc monitor "$2" -d 6 7 8 9 10
+else
+    bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+fi
 
 #Dual monitor
 #find out names with arandr or xrandr

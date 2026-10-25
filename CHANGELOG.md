@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026.10.25
+
+### Desktops on every monitor
+
+**What Changed.** On two monitors only the focused screen got desktops 1–10. The other got a single desktop that bspwm named "Desktop", shown in polybar as one icon that did nothing when clicked. Now the left monitor gets 1–5 and the right one 6–10, and super+1…0 still go to desktops 1–10. A single monitor keeps 1–10, as before.
+
+**Technical Details.** `bspwmrc` sorts the monitors left to right by their x position (`bspc query -T -m`), reorders bspwm's monitor list to match (`bspc wm -O`), since the super+number keys use desktop indexes (`^1`..`^10`) that follow that order, then gives 1–5 and 6–10 to the first two. With one monitor it runs the old `bspc monitor -d 1 … 10`. Extra monitors beyond two keep bspwm's default desktop. Tested on a dual-monitor test box (both screens and the keys), and with one output switched off and bspwm restarted (one monitor, desktops 1–10).
+
+**Files Modified.** `etc/skel/.config/bspwm/bspwmrc`
+
 ## 2026.10.22
 
 ### Power menu key calls kiro-powermenu
